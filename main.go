@@ -70,10 +70,10 @@ func cmdHelper() (Rewards, error) {
 
 	if *single {
 		// Use a default file
-		fileName = "bing.txt"
+		fileName = "./files/bing.txt"
 	} else {
 		// Randomly pick one of bing-0.txt to bing-5.txt
-		fileName = "bing-" + strconv.Itoa(rand.Intn(6)) + ".txt"
+		fileName = "./files/bing-" + strconv.Itoa(rand.Intn(6)) + ".txt"
 	}
 
 	rewards := Rewards{
